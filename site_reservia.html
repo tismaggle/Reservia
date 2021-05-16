@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="site_reservia.css" />
+        <title>Réservia - Résevations de séjours de vacances</title>
+        <script src="https://kit.fontawesome.com/de9191b1af.js" crossorigin="anonymous"></script>
+        <meta name="description" content="Réservez facilement vos vacances dès maintenant :)">
+    </head>
+
+    <body>
+        <div class="bloc_page">
+            <header>
+                <div>
+                    <img class="logo" src="images/logo/logo.png" alt="logo_reservia">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="hebergements" href="#hebergements" target="_blank">Hébergements</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#activites">Activités</a>
+                        </li>
+                        <li>
+                            <a class="login" href="#">S'incrire</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="corps">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h3>En plein centre ville ou en pleine nature</h3>
+                <form method="post" action="/recherche" autocomplete="off">
+                    <div class="searchbar">
+                        <div class="pinblock">
+                            <i id="pinicon" class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <input class="destination" type="text" name="destination" placeholder="Marseille, France" autocomplete="off">
+                        <input class="search" type="submit" value="Rechercher">
+                    </div>
+                    <div>
+                        <div class="filtres">
+                            <h4>Filtres</h4>
+                            <a class="filterlinks" href="#"><div><i id="icons" class="fas fa-money-bill-wave"></i><p>Économique</p></div></a>
+                            <a class="filterlinks" href="#"><div><i id="icons" class="fas fa-child"></i><p>Familial</p></div></a>
+                            <a class="filterlinks" href="#"><div><i id="icons" class="fas fa-heart"></i><p>Romantique</p></div></a>
+                            <a class="filterlinks" href="#"><div><i id="icons" class="fas fa-dog"></i><p>Animaux autorisés</p></div></a>
+                        </div>
+                        <div class="info">
+                            <i id="i" class="fas fa-info"></i>
+                            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <section>
+                <article id="hebergements">
+                    <h2>Hébergements à Marseille</h2>
+                    <div class="blochebergements">
+                        <a href="#" target="_blank">
+                            <div id="miniblochebergements" class="apercuvertical">
+                                <div class="imageverticale" id="cannebiere"></div>
+                                <div class="textvertical">
+                                    <h5>Auberge la Cannebière</h5>
+                                    <p>Nuit à partir de <span>25€</span></p>
+                                    <div class="starsvertical">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblochebergements" class="apercuvertical">
+                                <div class="imageverticale" id="port"></div>
+                                <div class="textvertical">
+                                    <h5>Hotel du port</h5>
+                                    <p>Nuit à partir de <span>52€</span></p>
+                                    <div class="starsvertical">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblochebergements" class="apercuvertical">
+                                <div class="imageverticale" id="mouettes"></div>
+                                <div class="textvertical">
+                                    <h5>Hotel les mouettes</h5>
+                                    <p>Nuit à partir de <span>76€</span></p>
+                                    <div class="starsvertical">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblochebergements" class="apercuvertical">
+                                <div class="imageverticale" id="mer"></div>
+                                <div class="textvertical">
+                                    <h5>Hotel de la mer</h5>
+                                    <p>Nuit à partir de <span>46€</span></p>
+                                    <div class="starsvertical">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblochebergements" class="apercuvertical">
+                                <div class="imageverticale" id="panier"></div>
+                                <div class="textvertical">
+                                    <h5>Auberge le panier</h5>
+                                    <p>Nuit à partir de <span>23€</span></p>
+                                    <div class="starsvertical">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblochebergements" class="apercuvertical">
+                                <div class="imageverticale" id="amina"></div>
+                                <div class="textvertical">
+                                    <h5>Hotel chez Amina</h5>
+                                    <p>Nuit à partir de <span>96€</span></p>
+                                    <div class="starsvertical">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="afficherplus">Afficher plus</p>
+                </article>
+                <aside>
+                    <div class="titlepopulaires">
+                        <h2>Les plus populaires</h2>
+                        <i id="chart" class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="blocpopulaire">
+                        <a href="#" target="_blank">
+                            <div id="miniblocpopulaires" class="apercuhorizontal">
+                                <div class="imagehorizontale" id="soleildumatin"></div>
+                                <div class="texthorizontal">
+                                    <h5>Hôtel Le soleil du <br> matin</h5>
+                                    <p>Nuit à partir de <span>128€</span></p>
+                                    <div class="starshorizontal">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblocpopulaires" class="apercuhorizontal">
+                                <div class="imagehorizontale" id="aucoeurdeleau"></div>
+                                <div class="texthorizontal">
+                                    <h5>Au cœur de l'eau<br> Chambre d'hôtes</h5>
+                                    <p>Nuit à partir de <span>71€</span></p>
+                                    <div class="starshorizontal">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div id="miniblocpopulaires" class="apercuhorizontal">
+                                <div class="imagehorizontale" id="toutbleuetblanc"></div>
+                                <div class="texthorizontal">
+                                    <h5>Hôtel Tout bleu et <br> Blanc</h5>
+                                    <p>Nuit à partir de <span>68€</span></p>
+                                    <div class="starshorizontal">
+                                        <i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="bleu" class="fas fa-star"></i><i id="gris" class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </aside>
+            </section>
+
+            <footer></footer>
+        </div>
+    </body>
+</html>
