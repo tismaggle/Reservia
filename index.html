@@ -20,10 +20,10 @@
                 <nav>
                     <ul>
                         <li>
-                            <a class="hebergements" href="#hebergements" target="_blank">Hébergements</a>
+                            <a class="linkhebergements" href="#hebergements" target="_blank">Hébergements</a>
                         </li>
                         <li>
-                            <a class="link" href="#activites">Activités</a>
+                            <a class="linkactivites" href="#activites">Activités</a>
                         </li>
                         <li>
                             <a class="login" href="#">S'incrire</a>
@@ -32,39 +32,40 @@
                 </nav>
             </header>
 
-            <div class="corps">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h5>En plein centre ville ou en pleine nature</h5>
-                <form method="post" action="/recherche" autocomplete="off">
-                    <div class="searchbar">
-                        <div class="pinblock">
-                            <i id="pinicon" class="fas fa-map-marker-alt"></i>
+            <main>
+                <section class="filtrages">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h5>En plein centre ville ou en pleine nature</h5>
+                    <form method="post" action="/recherche" autocomplete="off">
+                        <div class="searchbar">
+                            <div class="pinblock">
+                                <i id="pinicon" class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <input class="destination" type="text" name="destination" placeholder="Marseille, France" autocomplete="off">
+                            <input class="search" type="submit" value="Rechercher">
                         </div>
-                        <input class="destination" type="text" name="destination" placeholder="Marseille, France" autocomplete="off">
-                        <input class="search" type="submit" value="Rechercher">
-                    </div>
-                    <div>
-                        <div class="filtres">
-                            <h4>Filtres</h4>
-                            <a class="filterlinks" href="#"><div><i class="fas fa-money-bill-wave icons"></i><p>Économique</p></div></a>
-                            <a class="filterlinks" href="#"><div><i class="fas fa-child icons"></i><p>Familial</p></div></a>
-                            <a class="filterlinks" href="#"><div><i class="fas fa-heart icons"></i><p>Romantique</p></div></a>
-                            <a class="filterlinks" href="#"><div><i class="fas fa-dog icons"></i><p>Animaux autorisés</p></div></a>
+                        <div>
+                            <div class="filtres">
+                                <h4>Filtres</h4>
+                                <a class="filterlinks" href="#"><div><i class="fas fa-money-bill-wave icons"></i><p>Économique</p></div></a>
+                                <a class="filterlinks" href="#"><div><i class="fas fa-child icons"></i><p>Familial</p></div></a>
+                                <a class="filterlinks" href="#"><div><i class="fas fa-heart icons"></i><p>Romantique</p></div></a>
+                                <a class="filterlinks" href="#"><div><i class="fas fa-dog icons"></i><p>Animaux autorisés</p></div></a>
+                            </div>
+                            <div class="info">
+                                <i id="i" class="fas fa-info"></i>
+                                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <i id="i" class="fas fa-info"></i>
-                            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </section>
 
-            <section>
-                <article id="hebergements">
-                    <h2>Hébergements à Marseille</h2>
-                    <div class="blochebergements">
-                        <a href="#" target="_blank">
-                            <div class="apercuvertical">
+            
+                <section class="hebergements">
+                    <article>
+                        <h2>Hébergements à Marseille</h2>
+                        <div class="blochebergements">
+                            <a class="apercuvertical" href="#" target="_blank">
                                 <div class="imageverticale" id="cannebiere"></div>
                                 <div class="textvertical">
                                     <h5>Auberge la Cannebière</h5>
@@ -77,10 +78,8 @@
                                         <i class="fas fa-star gris"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuvertical">
+                            </a>
+                            <a class="apercuvertical" href="#" target="_blank">
                                 <div class="imageverticale" id="port"></div>
                                 <div class="textvertical">
                                     <h5>Hôtel du port</h5>
@@ -93,10 +92,8 @@
                                         <i class="fas fa-star bleu"></i>                                    
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuvertical">
+                            </a>
+                            <a class="apercuvertical" href="#" target="_blank">
                                 <div class="imageverticale" id="mouettes"></div>
                                 <div class="textvertical">
                                     <h5>Hôtel les mouettes</h5>
@@ -109,10 +106,8 @@
                                         <i class="fas fa-star gris"></i>                                    
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuvertical">
+                            </a>
+                            <a class="apercuvertical" href="#" target="_blank">
                                 <div class="imageverticale" id="mer"></div>
                                 <div class="textvertical">
                                     <h5>Hôtel de la mer</h5>
@@ -125,10 +120,8 @@
                                         <i class="fas fa-star gris"></i>                                    
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuvertical">
+                            </a>
+                            <a class="apercuvertical" href="#" target="_blank">
                                 <div class="imageverticale" id="panier"></div>
                                 <div class="textvertical">
                                     <h5>Auberge le panier</h5>
@@ -141,10 +134,8 @@
                                         <i class="fas fa-star gris"></i>                                    
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuvertical">
+                            </a>
+                            <a class="apercuvertical" href="#" target="_blank">
                                 <div class="imageverticale" id="amina"></div>
                                 <div class="textvertical">
                                     <h5>Hôtel chez Amina</h5>
@@ -157,113 +148,115 @@
                                         <i class="fas fa-star bleu"></i>                                    
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <a href="#" class="afficherplus"><p>Afficher plus</p></a>
-                </article>
-                <aside>
-                    <div class="titlepopulaires">
-                        <h2>Les plus populaires</h2>
-                        <i id="chart" class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="blocpopulaire">
-                        <a href="#" target="_blank">
-                            <div class="apercuhorizontal miniblocpopulaires">
-                                <div class="imagehorizontale" id="soleildumatin"></div>
-                                <div class="texthorizontal">
-                                    <h5>Hôtel Le soleil du <br> matin</h5>
-                                    <p>Nuit à partir de <span>128€</span></p>
-                                    <div class="starshorizontal">
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuhorizontal miniblocpopulaires">
-                                <div class="imagehorizontale" id="aucoeurdeleau"></div>
-                                <div class="texthorizontal">
-                                    <h5>Au cœur de l'eau<br> Chambre d'hôtes</h5>
-                                    <p>Nuit à partir de <span>71€</span></p>
-                                    <div class="starshorizontal">
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star gris"></i>                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuhorizontal miniblocpopulaires">
-                                <div class="imagehorizontale" id="toutbleuetblanc"></div>
-                                <div class="texthorizontal">
-                                    <h5>Hôtel Tout bleu et <br> Blanc</h5>
-                                    <p>Nuit à partir de <span>68€</span></p>
-                                    <div class="starshorizontal">
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star bleu"></i>
-                                        <i class="fas fa-star gris"></i>                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </aside>
-            </section>
-            <section class="activites">
-                <h2>Activités à Marseille</h2>
-                <div class="blocactivites">
-                    <a href="#" target="_blank">
-                        <div class="apercuactivites large">
-                            <div class="imageactiviteslarge" id="vieuxport"></div>
-                            <h5>Vieux Port</h5>
+                            </a>
                         </div>
-                    </a>
-                    <div class="mediumsmall">
-                        <a href="#" target="_blank">
-                            <div class="apercuactivites medium">
-                                <div class="imageactivitesmedium" id="pomegues"></div>
-                                <h5>Fort de Pomègues</h5>
+                        <a href="#" class="afficherplus"><p>Afficher plus</p></a>
+                    </article>
+                    <aside>
+                        <div class="blocaside">
+                            <div class="titlepopulaires">
+                                <h2>Les plus populaires</h2>
+                                <i id="chart" class="fas fa-chart-line"></i>
                             </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="apercuactivites small">
-                                <div class="imageactivitessmall" id="frioul"></div>
-                                <h5>Îles du Frioul</h5>
+                            <div class="blocpopulaire">
+                                <a href="#" target="_blank">
+                                    <div class="apercuhorizontal">
+                                        <div class="imagehorizontale" id="soleildumatin"></div>
+                                        <div class="texthorizontal">
+                                            <h5>Hôtel Le soleil du <br> matin</h5>
+                                            <p>Nuit à partir de <span>128€</span></p>
+                                            <div class="starshorizontal">
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <div class="apercuhorizontal">
+                                        <div class="imagehorizontale" id="aucoeurdeleau"></div>
+                                        <div class="texthorizontal">
+                                            <h5>Au cœur de l'eau<br> Chambre d'hôtes</h5>
+                                            <p>Nuit à partir de <span>71€</span></p>
+                                            <div class="starshorizontal">
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star gris"></i>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <div class="apercuhorizontal">
+                                        <div class="imagehorizontale" id="toutbleuetblanc"></div>
+                                        <div class="texthorizontal">
+                                            <h5>Hôtel Tout bleu et <br> Blanc</h5>
+                                            <p>Nuit à partir de <span>68€</span></p>
+                                            <div class="starshorizontal">
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star bleu"></i>
+                                                <i class="fas fa-star gris"></i>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <a href="#" target="_blank">
-                        <div class="apercuactivites large">
-                            <div class="imageactiviteslarge" id="calanques"></div>
-                            <h5>Parc national des Calanques</h5>
                         </div>
-                    </a>
-                    <div class="mediumsmall">
+                    </aside>
+                </section>
+                <section class="activites">
+                    <h2>Activités à Marseille</h2>
+                    <div class="blocactivites">
                         <a href="#" target="_blank">
-                            <div class="apercuactivites medium">
-                                <div class="imageactivitesmedium" id="notredame"></div>
-                                <h5>Notre-Dame-de-la-Garde</h5>
+                            <div class="apercuactivites large">
+                                <div class="imageactivites ilarge" id="vieuxport"></div>
+                                <h5>Vieux Port</h5>
                             </div>
                         </a>
+                        <div class="mediumsmall">
+                            <a href="#" target="_blank">
+                                <div class="apercuactivites medium">
+                                    <div class="imageactivites imedium" id="pomegues"></div>
+                                    <h5>Fort de Pomègues</h5>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank">
+                                <div class="apercuactivites small">
+                                    <div class="imageactivites ismall" id="frioul"></div>
+                                    <h5>Îles du Frioul</h5>
+                                </div>
+                            </a>
+                        </div>
                         <a href="#" target="_blank">
-                            <div class="apercuactivites small">
-                                <div class="imageactivitessmall" id="longchamp"></div>
-                                <h5>Parc Longchamp</h5>
+                            <div class="apercuactivites large">
+                                <div class="imageactivites ilarge" id="calanques"></div>
+                                <h5>Parc national des Calanques</h5>
                             </div>
-                        </a>    
+                        </a>
+                        <div class="mediumsmall">
+                            <a href="#" target="_blank">
+                                <div class="apercuactivites medium">
+                                    <div class="imageactivites imedium" id="notredame"></div>
+                                    <h5>Notre-Dame-de-la-Garde</h5>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank">
+                                <div class="apercuactivites small">
+                                    <div class="imageactivites ismall" id="longchamp"></div>
+                                    <h5>Parc Longchamp</h5>
+                                </div>
+                            </a>    
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </main>
             <footer>
                 <div class="colonnefooter">
                     <h3>A propos</h3>
