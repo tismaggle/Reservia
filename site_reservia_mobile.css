@@ -1,0 +1,500 @@
+.bloc_page
+{   background-color: thistle;}
+
+/*version tablette horizontale*/
+@media all and (min-width: 320px) and (max-width: 767px)
+{}
+
+/*version tablette verticale*/
+@media all and (min-width: 768px) and (max-width: 1024px)
+{   
+    .bloc_page
+    {   width: auto;}
+
+    .hebergements
+    {   flex-direction: column;}
+
+    aside
+    {   order: 1;
+        width: auto;
+        margin-bottom: 15px;}
+
+    article
+    {   order: 2;
+        width: auto;
+        margin-bottom: 15px;}
+
+    .apercuhorizontal
+    {   max-width: 265px;
+        height: 100%;}
+
+    .texthorizontal
+    {   max-height: 138px;}
+
+    .blocpopulaire
+    {   display: flex;
+        flex-direction: row;}
+
+    .blocactivites, .mediumsmall
+    {   gap: 20px;}
+
+    footer
+    {   flex-direction: row;}
+}
+
+header, article, .blocactivites, .activites h2
+{   margin: 20px;}
+
+.filtrages
+{   padding: 0px 20px 0px 20px;}
+
+main
+{   max-width: 375px;}
+
+.bloc_page
+{   max-width: 375px;
+    max-height: 4550px;
+    margin: auto;
+    flex-wrap: wrap;}    
+    
+/* Définition des polices personnalisées */
+@font-face
+{   font-family: 'Raleway';
+    src: url('font/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;}
+
+*
+{   font-family: 'Raleway', Arial, sans-serif;}
+
+/*header*/
+header
+{   max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin: auto;}
+
+.logo
+{   max-width: 25%;
+    height: auto;
+    margin: 30px 0px 0px 45px;}
+        
+nav ul
+{   display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 35px;}
+
+nav li
+{   padding: 28px;
+    font-weight: bold;}
+     
+.linkhebergements
+{   text-decoration: none;
+    color: #0065fc;
+    border-top: #0065FC solid 2px;
+    padding: 42px 25px 0px 25px;
+    font-weight: 500;}
+
+.linkactivites
+{   text-decoration: none;
+    color: black;
+    font-weight: 500;}
+    
+.login
+{   text-decoration: none;
+    color: #0065FC;
+    font-weight: 650;}
+       
+nav a:hover
+{   color: #0065FC;}
+
+/*barre de recherche et filtres*/
+.filtrages
+{   margin: 30px 0px 0px 0px;}
+
+h1
+{   font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 5px;}
+
+.filtrages h5
+{   font-size: .9rem;
+    font-weight: 500;
+    margin: 5px 0px 25px 0px;}
+
+.searchbar
+{   display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;}
+
+.pinblock
+{   background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;}
+
+#pinicon
+{   color: black;}
+
+.destination
+{   font-weight: bold;
+    font-size: 16px;
+    height: 42px;
+    padding: 0px 0px 0px 15px;
+    border: #f2f2f2 1.5px solid;
+    border-right: none;}
+
+.search
+{   background-color: #0065fc;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    padding: 0px 17px 0px 17px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    cursor: pointer;}
+
+.filtres
+{   max-width: 850px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: none;
+    gap: 10px;}
+
+h4
+{   font-weight: bolder;
+    width: 100%;}
+    
+.filtres div
+{   display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 43px;
+    width: 100%;
+    border: 1.5px #f2f2f2 solid;
+    border-left: none;
+    border-radius: 50px;
+    font-weight: bold;}
+
+.filtres a:hover
+{   background-color: #0065fc;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 43px;
+    border-radius: 50px;
+    box-shadow: .5px .5px 10px grey;}
+
+.filterlinks
+{   text-decoration: none;
+    color: black;}
+
+.filtres p
+{   padding: 0px 20px 0px 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;}
+
+.filtres h3
+{   display: flex;
+    align-items: center;}
+
+.icons
+    {color: #0065fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45.5px;
+    width: 45.5px;
+    background-color: #DEEBFF;
+    border-radius: 50px;}
+
+.info
+{   display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;}
+
+#i
+{   color: #0065FC;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;}
+
+.info p
+{   margin-left: 10px;
+    font-size: 15px;}
+
+/*hebergements a marseille et les plus populaires*/
+.hebergements
+{   display: flex;
+    margin-top: 25px;
+    gap: 30px;}
+
+article
+{   background-color: transparent;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+    
+article h2
+{   font-weight: 750;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 0px;}
+
+.blochebergements
+{   display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;}
+
+.apercuvertical 
+{   flex: 1;
+    min-width: 210px;
+    height: 170px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px grey;}
+     
+.imageverticale 
+{   height: 60%;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;}
+         
+#cannebiere
+{   background-image: url(images/cannebiere.jpg);}
+    
+#port
+{   background-image: url(images/hotelduport.jpg);}
+        
+#mouettes
+{   background-image: url(images/hotellesmouettes.jpg);}
+        
+#mer
+{   background-image: url(images/hoteldelamer.jpg);}
+        
+#panier
+{   background-image: url(images/hoteldupanier.jpg);}
+        
+#amina
+{   background-image: url(images/chezamina.jpg);}
+
+.textvertical
+{   display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 10px 0px 0px 10px;}
+    
+.textvertical h5
+{   font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    flex-wrap: wrap;}
+    
+.apercuvertical p
+{   font-size: 13px;
+    margin: 0px 0px 5px 0px;}
+    
+span
+{   font-weight: bold;}
+
+.starsvertical
+{   display: flex;
+    justify-content: flex-start;
+    margin: 0px 0px 5px 0px;
+    font-size: 10px;}
+        
+.bleu
+{   color: #0065fc;}   
+        
+.gris
+{   color: #f2f2f2;}
+
+a
+{   text-decoration: none;
+    color: black;}
+
+.afficherplus
+{   font-weight: bold;
+    color: black;
+    margin-top: 16px;}
+
+.afficherplus a:hover
+{   text-decoration : underline;
+    color: black;}
+
+aside
+{   background-color: #f2f2f2;
+    width: 375px;
+    margin: auto;
+    padding: 40px 0px 40px 0px;}
+
+aside h2
+{   font-weight: 750;
+    font-size: 20px;
+    margin-top: 0px;}
+
+.blocpopulaire
+{   display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;}
+
+#chart
+{   font-size: 20px;}
+
+.apercuhorizontal a
+{   width: 375px;
+    background-color: white;}
+    
+.apercuhorizontal
+{   display: flex;
+    flex-direction: row;
+    min-height: 120px;
+    width: 375px;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px grey;
+    margin: 0px 20px 0px 20px;}
+    
+.imagehorizontale 
+{   width: 40%;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;}
+    
+#soleildumatin
+{   background-image: url(images/soleildumatin.jpg);}
+
+#aucoeurdeleau
+{   background-image: url(images/aucoeurdeleau.jpg);}
+
+#toutbleuetblanc
+{   background-image: url(images/toutbleuetblanc.jpg);}
+    
+.texthorizontal
+{   display: flex;
+    flex-direction: column;
+    margin: 10px;}
+
+.texthorizontal h5
+{   font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    flex-wrap: wrap;}
+
+.apercuhorizontal p
+{   font-size: 13px;
+    margin: 0px 0px 5px 0px;}
+    
+.starshorizontal
+{   font-size: 10px;}
+
+.titlepopulaires
+{   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 20px 10px 20px;}
+
+/*activites a Marseille*/
+.activites
+{   margin: 30px 0px 60px 0px;}
+
+.blocactivites, .mediumsmall
+{   gap: 20px;}
+
+.blocactivites h5
+{   font-size: .9rem;
+    font-weight: 800;
+    padding-left: 20px;
+    margin: 20px 0px 20px 0px;}                   /*a supprimer*/
+
+.blocactivites a
+{   text-decoration: none;
+    color: black;}
+
+.apercuactivites
+{   box-shadow: 1px 1px 10px grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;}
+
+.mediumsmall
+{   flex: 1;
+    gap: 20px;}
+
+.imageactivites
+{   background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 130px;}
+
+#vieuxport
+{   background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);}
+
+#pomegues
+{   background-image: url(images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);}
+
+#frioul
+{   background-image: url(images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);}
+
+#calanques
+{   background-image: url(images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);}
+
+#notredame
+{   background-image: url(images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg);}
+
+#longchamp
+{   background-image: url(images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);}
+
+/*footer*/
+footer
+{   width: 375px;
+    background-color: #f2f2f2;
+    padding-top: 30px;}               
+
+footer h3
+{   font-weight: 750;
+    font-size: 1rem;}
+
+footer ul
+{   list-style: none;
+    padding: 0px;}
+
+footer li
+{   padding-bottom: 10px;
+    font-size: .9rem;}
+
+footer li a:hover
+{   text-decoration: underline;}
+
+.colonnefooter
+{   flex: 1;
+    margin-bottom: 40px;
+    padding-left: 30px;}
