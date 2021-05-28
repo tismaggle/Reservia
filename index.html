@@ -3,10 +3,12 @@
     <head>
         <!-- En-tête de la page -->
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="site_reservia.css" />
+        <link rel="stylesheet" media="screen and (min-width: 806px)" href="site_reservia.css" />
+        <link rel="stylesheet" media="screen and (max-width: 805px)" href="site_reservia_mobile.css"/>
         <title>Réservia - Résevations de séjours de vacances</title>
         <script src="https://kit.fontawesome.com/de9191b1af.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <meta name="description" content="Réservez facilement vos vacances dès maintenant :)">
     </head>
@@ -43,6 +45,7 @@
                             </div>
                             <input class="destination" type="text" name="destination" placeholder="Marseille, France" autocomplete="off">
                             <input class="search" type="submit" value="Rechercher">
+                            <button><i class="fas fa-search"></i></button>
                         </div>
                         <div>
                             <div class="filtres">
@@ -163,7 +166,7 @@
                                     <div class="apercuhorizontal">
                                         <div class="imagehorizontale" id="soleildumatin"></div>
                                         <div class="texthorizontal">
-                                            <h5>Hôtel Le soleil du <br> matin</h5>
+                                            <h5>Hôtel Le soleil du <br class="br"> matin</h5>
                                             <p>Nuit à partir de <span>128€</span></p>
                                             <div class="starshorizontal">
                                                 <i class="fas fa-star bleu"></i>
@@ -179,7 +182,7 @@
                                     <div class="apercuhorizontal">
                                         <div class="imagehorizontale" id="aucoeurdeleau"></div>
                                         <div class="texthorizontal">
-                                            <h5>Au cœur de l'eau<br> Chambre d'hôtes</h5>
+                                            <h5>Au cœur de l'eau<br class="br"> Chambre d'hôtes</h5>
                                             <p>Nuit à partir de <span>71€</span></p>
                                             <div class="starshorizontal">
                                                 <i class="fas fa-star bleu"></i>
@@ -195,7 +198,7 @@
                                     <div class="apercuhorizontal">
                                         <div class="imagehorizontale" id="toutbleuetblanc"></div>
                                         <div class="texthorizontal">
-                                            <h5>Hôtel Tout bleu et <br> Blanc</h5>
+                                            <h5>Hôtel Tout bleu et <br class="br"> Blanc</h5>
                                             <p>Nuit à partir de <span>68€</span></p>
                                             <div class="starshorizontal">
                                                 <i class="fas fa-star bleu"></i>

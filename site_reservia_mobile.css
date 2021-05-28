@@ -1,64 +1,44 @@
-/*media queries*/
-@media all and (min-width: 1025px)
+@media all and (max-width: 550px)
 {
-    .blocpopulaire
-    {   display: flex;
-        flex-direction: column;}
-
-    .starshorizontal
-    {   margin-top: 30px;}
-
-    .blocactivites
-    {   gap: 50px;}
-
-    .mediumsmall
-    {   gap: 50px;}
-
-    button
-    {   display: none;}
-}
-
-@media all and (min-width: 806px) and (max-width: 1075px)
-{   
-    .bloc_page
-    {   width: auto;}
-
-    button
+    .search
     {   display: none;}
 
-    .hebergements
-    {   flex-direction: column;}
-
-    aside
-    {   order: 1;
-        margin-bottom: 15px;}
-
-    article
-    {   order: 2;
-        width: auto;
-        margin-bottom: 15px;}
-
-    .apercuhorizontal
-    {   max-width: 265px;
-        height: 100%;}
+    .imagehorizontale
+    {   width: 40%;}
 
     .texthorizontal
-    {   max-height: 138px;}
+    {   margin: 10px;}
 
-    .blocpopulaire
-    {   display: flex;
-        flex-direction: row;}
-
-    .blocactivites, .mediumsmall
-    {   gap: 20px;}
+    footer
+    {   flex-direction: column;}
 }
 
-header, main
-{   margin: 45px;}
+@media all and (min-width: 551px) and (max-width: 805px)
+{
+    button
+    {   display: none;}
+
+    .imagehorizontale
+    {   width: 50%;}
+
+    .texthorizontal
+    {   margin: 10px 10px 10px 30px;}
+
+    footer
+    {   flex-direction: row;}
+}
+
+header, article, .blocactivites, .activites h2
+{   margin: 20px;}
+
+.filtrages
+{   padding: 0px 20px 0px 20px;}
+
+main
+{   max-width: 838px;}
 
 .bloc_page
-{   max-width: 1440px;
-    max-height: 1884px;
+{   max-width: 838px;
     margin: auto;
     flex-wrap: wrap;}    
     
@@ -74,18 +54,18 @@ header, main
 
 /*header*/
 header
-{   max-width: 1440px;
+{   max-width: 838px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
-    max-width: 1440px;}
+    background-color: white;
+    margin: auto;}
 
 .logo
 {   max-width: 25%;
     height: auto;
     margin: 30px 0px 0px 45px;}
-
+        
 nav ul
 {   display: flex;
     flex-direction: row;
@@ -168,18 +148,30 @@ h1
     border: none;
     cursor: pointer;}
 
+button
+{   background-color: #0065fc;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    padding: 0px 17px 0px 17px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    cursor: pointer;}
+
 .filtres
-{   max-width: 850px;
+{   max-width: 838px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
-    align-items: baseline;
-    margin-left: 5px;
-    border-left: none;}
+    align-items: flex-start;
+    border-left: none;
+    gap: 10px;}
 
 h4
-{   font-weight: bolder;}
+{   font-weight: bolder;
+    width: 100%;}
     
 .filtres div
 {   display: flex;
@@ -207,7 +199,7 @@ h4
     color: black;}
 
 .filtres p
-{   padding: 0px 30px 0px 10px;
+{   padding: 0px 20px 0px 10px;
     font-weight: 800;
     display: flex;
     align-items: center;}
@@ -250,13 +242,14 @@ h4
 /*hebergements a marseille et les plus populaires*/
 .hebergements
 {   display: flex;
+    flex-direction: column;
     margin-top: 25px;
     gap: 30px;}
 
 article
-{   background-color: #f2f2f2;
+{   order: 2;
+    background-color: transparent;
     border-radius: 18px;
-    padding: 45px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;}
@@ -266,7 +259,6 @@ article h2
     font-size: 20px;
     margin-left: 0px;
     margin-top: 0px;}
-
 
 .blochebergements
 {   display: flex;
@@ -352,40 +344,48 @@ a
 {   text-decoration : underline;
     color: black;}
 
-/*les pluspopulaires*/
 aside
-{   background-color: #f2f2f2;
-    border-radius: 18px;}
-
-
-aside
-{   padding: 40px;}
+{   order: 1;
+    background-color: #f2f2f2;
+    max-width: 838px;
+    padding: 40px 0px 40px 0px;}
 
 aside h2
-{   width: 300px;
-    font-weight: 750;
+{   font-weight: 750;
     font-size: 20px;
     margin-top: 0px;}
 
 .blocpopulaire
-{   gap: 20px;}
+{   display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    margin: auto;
+    gap: 20px;}
+
+.br
+{   display: none;}
 
 #chart
 {   font-size: 20px;}
 
+.apercuhorizontal a
+{   max-width: 210px;
+    max-height: 135px;
+    background-color: white;}
+    
 .apercuhorizontal
 {   display: flex;
-    flex-direction: row; 
-    max-height: 150px;
-    background-color: white;
+    flex-direction: row;
+    min-height: 120px;
+    min-width: 200px;
+    max-height: 130px;
     border-radius: 15px;
     padding: 5px;
     box-shadow: 1px 1px 10px grey;
-    margin: 0px;}
+    margin: 0px 20px 0px 20px;}
     
 .imagehorizontale 
-{   width: 125px;
-    background-position: center;
+{   background-position: center;
     background-size: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;}
@@ -402,7 +402,7 @@ aside h2
 .texthorizontal
 {   display: flex;
     flex-direction: column;
-    margin: 10px;}
+    max-width: 111px;}
 
 .texthorizontal h5
 {   font-size: 15px;
@@ -421,55 +421,43 @@ aside h2
 {   display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;}
+    align-items: baseline;
+    padding: 0px 20px 10px 20px;}
 
 /*activites a Marseille*/
 .activites
 {   margin: 30px 0px 60px 0px;}
 
-.blocactivites
-{   display: flex;
-    flex-flow: row;
-    justify-content: space-between;}
+.blocactivites, .mediumsmall
+{   gap: 20px;}
 
 .blocactivites h5
 {   font-size: .9rem;
     font-weight: 800;
-    padding-left: 20px;}
+    padding-left: 20px;
+    margin: 20px 0px 20px 0px;}                   /*a supprimer*/
 
 .blocactivites a
-{   flex: 1;
-    max-width: 330px;
-    text-decoration: none;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px grey;}
+{   text-decoration: none;
+    color: black;}
 
-.large
-{   height: 85%;}
+.apercuactivites
+{   box-shadow: 1px 1px 10px grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;}
 
 .mediumsmall
 {   flex: 1;
-    max-width: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;}
+    gap: 20px;}
 
 .imageactivites
 {   background-position: center;
     background-size: cover;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;}
-
-.ilarge
-{   height: 100%;
-    width: 100%;}
-
-.imedium
-{   height: 160px;}
-
-.ismall
-{   height: 120px;}
+    border-top-right-radius: 15px;
+    height: 130px;}
 
 #vieuxport
 {   background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);}
@@ -491,16 +479,13 @@ aside h2
 
 /*footer*/
 footer
-{   height: 200px;
+{   display: flex;
+    max-width: 838px;
     background-color: #f2f2f2;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding-left: 45px;}
+    padding-top: 30px;}               
 
 footer h3
-{   margin: 50px 0px 0px 0px;
-    font-weight: 750;
+{   font-weight: 750;
     font-size: 1rem;}
 
 footer ul
@@ -516,5 +501,5 @@ footer li a:hover
 
 .colonnefooter
 {   flex: 1;
-    display: flex;
-    flex-direction: column;}
+    margin-bottom: 20px;
+    padding-left: 30px;}
